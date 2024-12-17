@@ -1,5 +1,6 @@
 @use '../../../variables' as v;
 
 footer {
+    border-top: 5px solid v.$yellow;
     background-color: v.$blue;
 }

@@ -7,7 +7,9 @@ export const App = () => {
   return (
     <Router>
       <Header />
-      <Routers />
+      <main>
+        <Routers />
+      </main>
       <Footer />
     </Router>
   );

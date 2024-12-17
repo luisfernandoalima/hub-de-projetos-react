@@ -4,7 +4,7 @@ import "./Footer.scss";
 
 export const Footer = () => {
   return (
-    <footer className="flex items-center justify-between px-5 py-3">
+    <footer className="flex items-center justify-between px-5 py-2">
       <div className="text-slate-50">
         <p>Desenvolvido por:</p>
         <p className="font-semibold">Luis Fernando Alves de Lima</p>
