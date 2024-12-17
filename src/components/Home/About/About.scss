@@ -1,0 +1,46 @@
+@use "../../../variables.scss" as v;
+@use "../../../mixins.scss" as m;
+
+
+.about_section{
+    @include m.flex(center, center, column);
+    height: max-content;
+    border-top: 5px solid v.$yellow;
+    background-color: v.$white;
+
+    h2{
+        text-align: center;
+    }
+
+    div{
+        @include m.flex(center, center, row);
+    }
+    img{
+        width: 250px;
+    }
+    article{
+        width: 45%;
+    }
+
+    p{
+        color: #000;
+        text-indent: 30px;
+        text-align: justify;
+    }
+}
+
+
+@media (max-width: 768px){
+    .about_section{
+        div{
+            @include m.flex(center, center, column);
+        }     
+        img{
+            margin: 20px auto;
+        }
+        
+        article{
+            width: 100%;
+        }
+    }
+}

@@ -4,7 +4,7 @@ import './Title.scss'
 
 export const Title = () => {
   return (
-    <section className="p-2">
+    <section className="p-2 mt-16 title_section">
       <div>
         <h1 className="font-bold text-5xl md:text-6xl">HUB DE PROJETOS</h1>
         <h2 className="font-semibold text-3xl md:text-4xl">Desenvolvedor Web JavaScript</h2>
