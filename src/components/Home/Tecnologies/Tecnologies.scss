@@ -1,0 +1,9 @@
+@use "../../../variables.scss" as v;
+@use "../../../mixins.scss" as m;
+
+.section_tecnologies{
+  @include m.flex(center, center, column);
+  height: max-content;
+  border-top: 5px solid v.$yellow;
+  background-color: v.$white;
+}

@@ -1,0 +1,79 @@
+@use "../../../../variables.scss" as v;
+@use "../../../../mixins.scss" as m;
+
+.icon_container {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  gap: 15px;
+
+  div {
+    @include m.flex(center, center, row);
+    padding: 0.8rem;
+    border-radius: 10px;
+    background-color: #ededed;
+    box-shadow: 4px 6px 8px #0000006e;
+
+    font-size: 3.5em;
+    transition: 0.3s;
+
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
+
+  .html{
+    color: #F25D27;
+  }
+
+  .css{
+    color: #214CE5;
+  }
+
+  .js{
+    color: #F7E018;
+  }
+
+  .ts{
+    color: #037ACC;
+  }
+
+  .sass{
+    color: #CE679A;
+  }
+
+  .bootstrap{
+    color: #8C0BFD;
+  }
+
+  .git{
+    color: #F05033;
+  }
+
+  .github{
+    color: #000;
+  }
+
+  .react{
+    color: #61DAFB;
+  }
+
+  .node{
+    color: #68A063;
+  }
+
+  .tailwind{
+    color: #38BDF8;
+  }
+
+  .vite{
+    color: #B04DF6;
+  }
+}
+
+@media (max-width: 768px) {
+  .icon_container{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 20px;
+  }
+}
