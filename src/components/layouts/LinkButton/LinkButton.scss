@@ -1,0 +1,12 @@
+@use "../../../variables.scss" as v;
+@use "../../../mixins.scss" as m;
+@use "sass:color";
+
+.LinkButton {
+  background-color: v.$blue;
+  transition: .5s;
+
+  &:hover {
+    background-color: #120079;
+  }
+}

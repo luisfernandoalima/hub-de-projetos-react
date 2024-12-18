@@ -1,0 +1,50 @@
+@use "../../../variables.scss" as v;
+@use "../../../mixins.scss" as m;
+
+.section_projects {
+  @include m.flex(center, center, column);
+  height: max-content;
+  border-top: 5px solid v.$yellow;
+  background-color: v.$white;
+
+  h2 {
+    text-align: center;
+  }
+
+  div {
+    @include m.flex(center, center, row);
+  }
+
+  img {
+    width: 300px;
+  }
+
+  article {
+    width: 50%;
+
+    a {
+      display: block;
+      text-align: center;
+    }
+  }
+
+  p {
+    color: #000;
+  }
+}
+
+@media (max-width: 768px) {
+  .section_projects {
+    div {
+      @include m.flex(center, center, column);
+    }
+
+    img {
+      margin: 20px auto;
+    }
+
+    article {
+      width: 100%;
+    }
+  }
+}
