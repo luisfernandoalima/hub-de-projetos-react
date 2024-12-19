@@ -1,0 +1,63 @@
+@use "../../../variables.scss" as v;
+@use "../../../mixins.scss" as m;
+
+.section_contact {
+  @include m.flex(center, center, column);
+  height: max-content;
+  border-top: 5px solid v.$yellow;
+
+  div {
+    @include m.flex(center, space-around, row);
+
+    img {
+      display: block;
+      width: 300px;
+    }
+  }
+
+  .buttonArea {
+    @include m.flex(center, center, column);
+    gap: 20px;
+
+    button {
+      @include m.flex(center, flex-start, row);
+      width: 250px;
+      padding: 10px 15px;
+      border-radius: 20px;
+      background-color: aliceblue;
+      box-shadow: 4px 6px 10px #0000007d;
+
+      font-size: 1.3em;
+      transition: 0.3s;
+
+      &:hover {
+        transform: scale(1.2);
+      }
+
+      svg {
+        font-size: 1.5em;
+      }
+      span {
+        font-weight: 600;
+        margin-left: 10px;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .section_contact {
+    div {
+      display: block;
+      width: 100%;
+
+      img {
+        display: none;
+      }
+    }
+
+    .buttonArea{
+        row-gap: 30px;
+    }
+  }
+}
