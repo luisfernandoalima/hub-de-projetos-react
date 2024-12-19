@@ -3,6 +3,7 @@ import React from "react";
 export interface PageUpButtomProps {
   isVisible: boolean;
   bottomOffset: number;
+  buttonTransition: number;
   onClick: () => void;
 }
 

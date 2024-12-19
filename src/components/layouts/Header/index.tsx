@@ -11,6 +11,7 @@ import "./Header.scss";
 export const Header:React.FC<HeaderProps> = ({footerRef}) => {
   const headerRef = useRef<HTMLElement | null>(null);
   const [isVisible, setIsVisible] = useState(false);
+  const [buttonTransition, setButtonTransition] = useState(0.5)
   const [bottomOffset, setBottomOffset] = useState(15)
 
   useEffect(() => {
@@ -23,8 +24,10 @@ export const Header:React.FC<HeaderProps> = ({footerRef}) => {
         setIsVisible(window.scrollY > headerBottom);
 
         if(footerTop < windowHeight){
+          setButtonTransition(0)
           setBottomOffset(windowHeight - footerTop + 15)
         } else{
+          setButtonTransition(0.5)
           setBottomOffset(15)
         }
       }
@@ -50,7 +53,7 @@ export const Header:React.FC<HeaderProps> = ({footerRef}) => {
         </Link>
         <Navbar />
       </header>
-      <PageUpButton isVisible={isVisible} onClick={scrollToTop} bottomOffset={bottomOffset}/>
+      <PageUpButton isVisible={isVisible} onClick={scrollToTop} bottomOffset={bottomOffset} buttonTransition={buttonTransition}/>
     </>
   );
 };
