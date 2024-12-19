@@ -1,10 +1,12 @@
+import { forwardRef } from "react";
+
 import { FaLinkedin, FaGithubSquare } from "react-icons/fa";
 
 import "./Footer.scss";
 
-export const Footer = () => {
+export const Footer = forwardRef<HTMLElement>((_, ref) => {
   return (
-    <footer className="flex items-center justify-between px-5 py-2">
+    <footer className="flex items-center justify-between px-5 py-2" ref={ref}>
       <div className="text-slate-50">
         <p>Desenvolvido por:</p>
         <p className="font-semibold">Luis Fernando Alves de Lima</p>
@@ -22,4 +24,9 @@ export const Footer = () => {
       </div>
     </footer>
   );
-};
+});
+
+// export const Footer = () => {
+
+//   );
+// };
