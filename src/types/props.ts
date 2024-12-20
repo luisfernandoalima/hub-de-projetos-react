@@ -13,9 +13,11 @@ export type LinkButtonProps = {
 };
 
 export interface HeaderProps {
-  footerRef: React.RefObject<HTMLElement>
+  footerRef: React.RefObject<HTMLElement>;
 }
 
 export interface CardProps {
+  name: string;
+  desc: string;
   tags: Array<string>;
 }

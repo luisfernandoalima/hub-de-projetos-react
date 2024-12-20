@@ -1,44 +1,62 @@
-@use '../../../variables.scss' as v;
-@use '../../../mixins.scss' as m;
+@use "../../../variables.scss" as v;
+@use "../../../mixins.scss" as m;
 
-.card{
-    @include m.flex(center, center, column);
-    width: 300px;
-    height: fit-content;
-    border: 2px solid black;
-    border-radius: 10px;
+.card {
+  @include m.flex(center, center, column);
+  width: 300px;
+  height: fit-content;
+  border: 2px solid black;
+  border-radius: 10px;
 
-    div{
-        width: 100%;
+  div {
+    width: 100%;
+  }
+
+  .thumbnail_project {
+    img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 10px;
     }
+  }
 
-    .thumbnail_project{
-        img{
-            width: 100%;
-            object-fit: cover;
-            border-radius: 10px 10px 0px 0px;
+  .cardInfo{
+        h2{
+            text-indent: 15px;
         }
+      .desc {
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        /* Esconde o conteúdo que ultrapassa o contêiner */
+        text-overflow: ellipsis;
+        /* Substitui o texto que ultrapassa por reticências */
+        -webkit-line-clamp: 2;
+        line-clamp: 2;
+        /* Número de linhas desejado */
+        text-indent: 15px;
+        text-align: justify;
+      }
+    
     }
-
-    .tag_div{
-        display: block;
-        column-gap: 5px;
-        row-gap: 5px;
-        overflow-y: auto;
-
-
-
-        height: 100px;
-
-        img{
-            display: inline;
-            margin: 2px 2px;
-        }
+    .tag_div {
+      display: block;
+      gap: 5px;
+      overflow-y: auto;
+  
+      height: 100px;
+  
+      img {
+        display: inline;
+        margin: 2px 2px;
+      }
     }
+    
 
-    a{
-        margin-top: 1em;
-        width: 100%;
-        text-align: center;
-    }
+  a {
+    margin-top: 1em;
+    width: 100%;
+    text-align: center;
+  }
 }
