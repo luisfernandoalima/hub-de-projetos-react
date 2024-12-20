@@ -1,0 +1,19 @@
+@use '../../../variables.scss' as v;
+
+.main_area{
+    background-color: v.$white;
+    border-radius: 10px 10px 0px 0px;
+    height: 100dvh;
+
+    max-width: 1200px;
+    margin: auto;
+
+    .project_area{
+        margin: auto;
+        display: grid;
+        grid-template-columns: auto auto auto;
+        gap: 20px;
+        justify-content: center;
+        align-content: center;
+    }
+}

@@ -1,0 +1,12 @@
+@use "../../../variables.scss" as v;
+@use "../../../mixins.scss" as m;
+
+.projects_title_section {
+    @include m.flex(center, center, row);
+    gap: 50px;
+    height: 30vh;
+
+    h1 {
+        color: v.$lightBlue;
+      }
+}

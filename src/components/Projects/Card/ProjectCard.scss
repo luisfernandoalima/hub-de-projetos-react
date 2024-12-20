@@ -1,0 +1,44 @@
+@use '../../../variables.scss' as v;
+@use '../../../mixins.scss' as m;
+
+.card{
+    @include m.flex(center, center, column);
+    width: 300px;
+    height: fit-content;
+    border: 2px solid black;
+    border-radius: 10px;
+
+    div{
+        width: 100%;
+    }
+
+    .thumbnail_project{
+        img{
+            width: 100%;
+            object-fit: cover;
+            border-radius: 10px 10px 0px 0px;
+        }
+    }
+
+    .tag_div{
+        display: block;
+        column-gap: 5px;
+        row-gap: 5px;
+        overflow-y: auto;
+
+
+
+        height: 100px;
+
+        img{
+            display: inline;
+            margin: 2px 2px;
+        }
+    }
+
+    a{
+        margin-top: 1em;
+        width: 100%;
+        text-align: center;
+    }
+}
