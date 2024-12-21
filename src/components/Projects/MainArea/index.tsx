@@ -18,19 +18,19 @@ export const ProjectsMainArea = () => {
             "nodejs",
             "mongodb",
           ]}
-          path="/mynotes"
+          path="/projects/mynotes"
         />
         <ProjectsCard
           name="Portfolio"
           desc='Site One Page para Portfolio Profissional, criado com o objetivo de mostrar de forma clara as minhas habilidades e experiências.'
           tags={["html", "css", "javascript", "bootstrap"]}
-          path="/portfolio"
+          path="/projects/portfolio"
         />
         <ProjectsCard
           name="CyberBurguer"
           desc='Projeto para realização do trabalho de conclusão de curso de Desenvolvimento de Sistemas (DS) da Etec Jardim Ângela.'
           tags={["html", "css", "javascript", "php", "java", "mysql"]}
-          path="/cyberburguer"
+          path="/projects/cyberburguer"
         />
       </div>
     </section>

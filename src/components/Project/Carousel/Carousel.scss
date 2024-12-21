@@ -1,30 +1,31 @@
-@use '../../../variables.scss' as v;
-@use '../../../mixins.scss' as m;
+@use "../../../variables.scss" as v;
+@use "../../../mixins.scss" as m;
 
-.img_div{
-    @include m.flex(center, center, column);
-    width: 50%;
-    gap: 10px
+.img_div {
+  @include m.flex(center, center, column);
+  width: 50%;
+  gap: 10px;
 }
 
-.imgs_area{
-    @include m.flex(center, space-between, row);
-    gap: 10px;
+
+.imgs_area {
+  @include m.flex(center, space-between, row);
+  gap: 10px;
+  width: 100%;
+  overflow-x: auto;
+
+  img {
+    width: 150px;
+    border-radius: 10px;
+
+    &.active {
+      border: 2px solid v.$yellow;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .img_div {
     width: 100%;
-    overflow-x: auto;
-
-    img{
-        width: 150px;
-        border-radius: 10px;
-
-        &.active{
-            border: 2px solid v.$yellow;
-        }
-    }
-}
-
-@media(max-width: 768px){
-    .img_div{
-       width: 100%;
-    }
+  }
 }

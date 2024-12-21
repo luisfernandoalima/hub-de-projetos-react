@@ -1,5 +1,5 @@
 import { FaGithub } from "react-icons/fa";
-import { PortfolioCarousel } from "../Carousel/portfolio.tsx";
+import { PortfolioCarousel } from "../../../components/Project/Carousel/portfolio.tsx";
 
 import "../main.scss";
 
@@ -18,7 +18,7 @@ export const ProjectPortfolio = () => {
             <li>JavaScript;</li>
             <li>Bootstrap.</li>
           </ul>
-          <a href="" target="_blank">Ver Projeto</a>
+          <a href="https://luisfernandoalima.github.io/portfolio/" target="_blank">Ver Projeto</a>
         </div>
       </section>
 
@@ -45,7 +45,7 @@ export const ProjectPortfolio = () => {
             O Bootstrap, um framework web, também foi utilizado para auxiliar na
             responsividade do site.
           </p>
-          <a href="" target="_blank">
+          <a href="https://github.com/luisfernandoalima/portfolio" target="_blank">
             <FaGithub /> Link do Repositório
           </a>
         </article>
