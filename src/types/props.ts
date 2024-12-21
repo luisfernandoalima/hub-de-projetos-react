@@ -20,4 +20,5 @@ export interface CardProps {
   name: string;
   desc: string;
   tags: Array<string>;
+  path: string
 }

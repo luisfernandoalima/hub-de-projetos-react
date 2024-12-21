@@ -8,7 +8,7 @@ import { projectsThumb } from "../../../utils/thumbnails";
 
 import "./ProjectCard.scss";
 
-export const ProjectsCard: React.FC<CardProps> = ({ name, desc, tags }) => {
+export const ProjectsCard: React.FC<CardProps> = ({ name, desc, tags, path }) => {
   const takeTags = () => {
     return tags
       .filter((item) => item in tagList)
@@ -30,7 +30,7 @@ export const ProjectsCard: React.FC<CardProps> = ({ name, desc, tags }) => {
         <h3>Tecnologias Utilizadas:</h3>
       </div>
       <div className="tag_div">{takeTags()}</div>
-      <LinkButton text="Ver" path="/" />
+      <LinkButton text="Ver" path={path} />
     </div>
   );
 };

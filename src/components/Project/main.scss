@@ -1,0 +1,42 @@
+@use "../../variables.scss" as v;
+@use "../../mixins.scss" as m;
+
+.project_header,
+.project_info {
+  @include m.flex(center, space-between, row);
+  background-color: v.$white;
+  border-radius: 10px;
+  height: fit-content;
+  padding: 1em;
+  max-width: 1140px;
+  margin: 2em auto;
+}
+
+.project_header {
+  .project_title {
+    width: 50%;
+
+    p {
+      font-weight: 500;
+    }
+
+    ul {
+      li {
+        font-weight: 500;
+      }
+    }
+  }
+}
+
+.project_info{
+    h2{
+        font-size: 1.8em;
+        font-weight: 600;
+        text-indent: 5px;
+    }
+
+    p{
+        text-indent: 30px;
+        margin-bottom: 1em;
+    }
+}
