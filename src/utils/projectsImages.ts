@@ -13,3 +13,11 @@ import cyberburguer4 from  '../assets/img/projects/CyberBurguer/CyberBurguer004.
 import cyberburguer5 from  '../assets/img/projects/CyberBurguer/CyberBurguer005.png'
 
 export const cyberburguerImages = { cyberburguer1, cyberburguer2, cyberburguer3, cyberburguer4, cyberburguer5}
+
+import mynotes1 from '../assets/img/projects/MyNotes/MyNotes01.png'
+import mynotes2 from '../assets/img/projects/MyNotes/MyNotes02.png'
+import mynotes3 from '../assets/img/projects/MyNotes/MyNotes03.png'
+import mynotes4 from '../assets/img/projects/MyNotes/MyNotes04.png'
+import mynotes5 from '../assets/img/projects/MyNotes/MyNotes05.png'
+
+export const mynotesImages = {mynotes1, mynotes2, mynotes3, mynotes4, mynotes5}

@@ -1,5 +1,5 @@
 import { FaGithub } from "react-icons/fa";
-import { CyberBurguerCarousel } from "../../../components/Project/Carousel/cyberburguer";
+import { MyNotesCarousel } from "../../../components/Project/Carousel/mynotes";
 
 import "../main.scss";
 
@@ -7,7 +7,7 @@ export const ProjectMyNotes = () => {
   return (
     <>
       <section className="project_header">
-        <CyberBurguerCarousel />
+        <MyNotesCarousel />
         <div className="project_title p-5">
           <h1 className="font-bold text-5xl md:text-4xl lg:text-5xl mb-3">
             MyNotes
@@ -92,7 +92,10 @@ export const ProjectMyNotes = () => {
             interagem um com o outro e como ligar esses sistemas a necissidades
             de uma empresa.
           </p>
-          <a href="https://github.com/luisfernandoalima/MyNotes" target="_blank">
+          <a
+            href="https://github.com/luisfernandoalima/MyNotes"
+            target="_blank"
+          >
             <FaGithub /> Link do Repositório
           </a>
         </article>
