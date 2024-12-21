@@ -7,5 +7,5 @@ export default defineConfig({
     host: true,
   },
   plugins: [react()],
-  base: "",
+  base: "/hub-de-projetos-react",
 });
