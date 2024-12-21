@@ -9,11 +9,11 @@ import { ProjectMyNotes } from "../pages/Project/MyNotes";
 export const Routers = () => {
   return (
     <Routes>
-      <Route path="/hub-de-projetos-react" element={<Home />} />
-      <Route path="/hub-de-projetos-react/projects" element={<Projects/>}/>
-      <Route path="/hub-de-projetos-react/projects/portfolio" element={<ProjectPortfolio/>}/>
-      <Route path="/hub-de-projetos-react/projects/cyberburguer" element={<ProjectCyberBurguer/>}/>
-      <Route path="/hub-de-projetos-react/projects/mynotes" element={<ProjectMyNotes/>}/>
+      <Route path="/" element={<Home />} />
+      <Route path="/projects" element={<Projects/>}/>
+      <Route path="/projects/portfolio" element={<ProjectPortfolio/>}/>
+      <Route path="/projects/cyberburguer" element={<ProjectCyberBurguer/>}/>
+      <Route path="/projects/mynotes" element={<ProjectMyNotes/>}/>
     </Routes>
   );
 };
