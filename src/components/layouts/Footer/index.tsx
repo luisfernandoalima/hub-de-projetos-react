@@ -15,18 +15,13 @@ export const Footer = forwardRef<HTMLElement>((_, ref) => {
         </p>
       </div>
       <div className="flex items-center justify-between w-20 text-slate-50 text-4xl">
-        <a href="" target="_blank">
+        <a href="https://www.linkedin.com/in/luis-fernando-a-43aaa2230/" target="_blank">
           <FaLinkedin />
         </a>
-        <a href="" target="_blank">
+        <a href="https://github.com/luisfernandoalima" target="_blank">
           <FaGithubSquare />
         </a>
       </div>
     </footer>
   );
 });
-
-// export const Footer = () => {
-
-//   );
-// };

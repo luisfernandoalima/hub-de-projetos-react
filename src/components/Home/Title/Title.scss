@@ -2,34 +2,48 @@
 @use "../../../mixins.scss" as m;
 
 .title_section {
-    @include m.flex(center, center, row);
-    gap: 50px;
-    height: 60vh;
-    // background-color: red;
+  @include m.flex(center, center, row);
+  gap: 50px;
+  height: 60vh;
+  // background-color: red;
   div {
     h1 {
       color: v.$lightBlue;
     }
 
-    h2{
-        color: v.$yellow;
+    h2 {
+      color: v.$yellow;
     }
 
-    p{
-        color: v.$white
+    p {
+      color: v.$white;
+    }
+
+    .LinkButton {
+      display: block;
+      width: 50%;
+      text-align: center;
+      border: 3px solid v.$yellow;
+      margin-top: 15px;
+      background-color: v.$blue;
+      transition: 0.5s;
+
+      &:hover {
+        background-color: #120079;
+      }
     }
   }
 
-  img{
+  img {
     display: block;
     width: 20%;
   }
 }
 
-@media (max-width: 768px){
-    .title_section{
-        img{
-            display: none;
-        }      
+@media (max-width: 768px) {
+  .title_section {
+    img {
+      display: none;
     }
+  }
 }

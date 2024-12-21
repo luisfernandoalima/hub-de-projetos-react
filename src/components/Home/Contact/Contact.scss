@@ -21,6 +21,7 @@
 
     button {
       @include m.flex(center, flex-start, row);
+      color: #fff;
       width: 250px;
       padding: 10px 15px;
       border-radius: 20px;
@@ -40,6 +41,30 @@
       span {
         font-weight: 600;
         margin-left: 10px;
+      }
+
+      &.github{
+        background-color: #000;
+
+        &:hover{
+          background-color: #2e2e2e;
+        }
+      }
+
+      &.gmail{
+        background: #F44336;
+
+        &:hover{
+          background-color:  #ff5347;
+        }
+      }
+
+      &.linkedin{
+        background-color: #007AB9;
+        &.hover{
+          background-color: #009eec;
+
+        }
       }
     }
   }

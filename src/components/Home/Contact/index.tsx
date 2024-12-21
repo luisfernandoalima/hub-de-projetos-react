@@ -9,14 +9,14 @@ export const HomeContact = () => {
       <h2 className="text-4xl font-semibold text-center text-slate-50">Contato</h2>
       <div className="gap-x-14 mt-5 mb-4">
         <div className="buttonArea">
-          <a href="">
-            <button><FaGithub/><span>GitHub</span></button>
+          <a href="https://github.com/luisfernandoalima">
+            <button className="github"><FaGithub/><span>GitHub</span></button>
           </a>
-          <a href="">
-            <button><FaGoogle/><span>E-mail</span></button>
+          <a href="mailto:lima.luisfernando.dev@gmail.com">
+            <button className="gmail"><FaGoogle/><span>E-mail</span></button>
           </a>
-          <a href="">
-            <button><FaLinkedin/><span>LinkedIn</span></button>
+          <a href="https://www.linkedin.com/in/luis-fernando-a-43aaa2230/" target="_blank">
+            <button className="linkedin"><FaLinkedin/><span>LinkedIn</span></button>
           </a>
         </div>
         <img src={contatoImage} alt="Imagem de contatos" />
