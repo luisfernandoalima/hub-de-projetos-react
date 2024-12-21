@@ -11,7 +11,7 @@ export const HomeProjects = () => {
       <div className="gap-x-14 mt-5 mb-4">
         <article className="text-3xl flex-col items-center justify-center">
           <p className="mb-4">Veja todos os meu projetos:</p>
-          <LinkButton text="Clique aqui!" path={"/projects"}/>
+          <LinkButton text="Clique aqui!" path={"/hub-de-projetos-react/projects"}/>
         </article>
         <img src={projectsImage} alt="Imagem de Projetos" />
       </div>
