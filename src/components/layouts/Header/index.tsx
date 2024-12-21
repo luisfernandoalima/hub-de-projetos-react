@@ -48,7 +48,7 @@ export const Header:React.FC<HeaderProps> = ({footerRef}) => {
   return (
     <>
       <header className="flex justify-between items-center" ref={headerRef}>
-        <Link to={"/"}>
+        <Link to={"/hub-de-projetos-react"}>
           <img src={imgLogo} alt="Logo" className="w-40" />
         </Link>
         <Navbar />
