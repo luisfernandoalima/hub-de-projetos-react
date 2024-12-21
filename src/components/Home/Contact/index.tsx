@@ -9,7 +9,7 @@ export const HomeContact = () => {
       <h2 className="text-4xl font-semibold text-center text-slate-50">Contato</h2>
       <div className="gap-x-14 mt-5 mb-4">
         <div className="buttonArea">
-          <a href="https://github.com/luisfernandoalima">
+          <a href="https://github.com/luisfernandoalima" target="_blank">
             <button className="github"><FaGithub/><span>GitHub</span></button>
           </a>
           <a href="mailto:lima.luisfernando.dev@gmail.com">
